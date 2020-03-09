@@ -1,0 +1,3 @@
+Update: rustup update
+Compile: rustc <filename.rs>
+Run as executable.
