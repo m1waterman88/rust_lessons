@@ -4,10 +4,9 @@
 
 fn main() {
     let age = 31;
+    
     println!("I'm {} years old.", age);
-
     println!("I was {1}, but now I'm {0}.", age, (age - 1));
-
     println!("The {subject} {verb} the {object}.",
              object="the lazy dog",
              subject="quick brown fox",
