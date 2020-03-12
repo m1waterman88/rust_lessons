@@ -1,3 +1,37 @@
-Update: rustup update
-Compile: rustc <filename.rs>
-Run as executable.
+Cargo: build system, package manager, dependency handling
+Crates: rust packages
+
+Updates: rustup update
+
+Basic:
+  Compile: rustc <filename.rs>
+  Run as executable.
+
+Cargo:
+  Separate Cargo docs: https://doc.rust-lang.org/cargo/
+
+  01. cargo new project_name
+  2a. from project_name dir:
+        cargo build
+        ./target/debug/project_name
+  2b. like 2a but in one step, from project_name dir:
+        cargo run
+
+  Or: check if code compiles w/o producing a binary,
+      which can cut out time of creating a binary
+      when continually checking work:
+        cargo check
+
+
+  builds:
+    cargo build
+      builds executable in ./target/debug/
+    cargo build --release
+      builds executable in ./target/release/
+
+  NOTE: cargo commands are OS agnostic: Linux, macOS, or Windows
+
+
+Left of in The Book at:
+https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html
+
